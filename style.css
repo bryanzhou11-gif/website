@@ -59,7 +59,7 @@ body{
     margin:5vw;
     text-decoration:none;
     font-size:20px;
-    color:black;
+    color:#C8E6C9;
 }
 .blur-box{
     z-index:4;
@@ -124,6 +124,7 @@ h1{
     width:85%;
     min-height:40%; 
     background-color: #D1CBC1;
+    padding: 2rem 0;
 }
 .hardware-title{
     text-align:start;
@@ -140,3 +141,90 @@ h1{
     width:20vw;
     border-radius: 5px;
 }
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+}
+
+/* hidden radio inputs hold the "current slide" state */
+input[name="slide"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.carousel {
+    position: relative;
+    width: 40vw;
+    align-self: center;   /* .hardware is a flex container */
+  }
+
+/* the window you look through; only one image is visible */
+.viewport {
+  min-width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* the tall strip of images that slides up/down */
+.track {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s ease;
+}
+
+.track img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+}
+
+/* move the track based on which radio is checked
+   translateY % is relative to the track height (= one image) */
+#s1:checked ~ .carousel .track { transform: translateY(0%); }
+#s2:checked ~ .carousel .track { transform: translateY(-100%); }
+#s3:checked ~ .carousel .track { transform: translateY(-200%); }
+#s4:checked ~ .carousel .track { transform: translateY(-300%); }
+/* buttons sit to the right of the image */
+.set {
+  display: none;
+  position: absolute;
+  top: -4.5rem;
+  bottom: -4.5rem;
+  left: 50%;
+  transform:translateX(-50%);
+  margin-left: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* show only the button set for the current slide */
+#s1:checked ~ .carousel .set1,
+#s2:checked ~ .carousel .set2,
+#s3:checked ~ .carousel .set3,
+#s4:checked ~ .carousel .set4 { display: flex; }
+
+.set label {
+  width: 5rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10%;
+  background: #a3a3a3;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.set label:hover { background: #ddd; transform: scale(1.08); }
