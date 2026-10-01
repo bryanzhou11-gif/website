@@ -132,7 +132,7 @@ h1{
     font-size: clamp(24px,5vw,75px);
 }
 .hardware-descriptor{
-    width:auto;
+    max-width:40vw;
 }
 .hardware-descriptor{
     flex-direction: column;
@@ -166,7 +166,7 @@ input[name="slide"] {
 
 /* the window you look through; only one image is visible */
 .viewport {
-  min-width: 100%;
+  max-width: 30vw;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 12px;
