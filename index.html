@@ -20,7 +20,7 @@
                     <a href="#top" class= "momo-trust-display-regular" style="text-decoration:none">bryan zhou's website</a>
                 </h1>
                 <a style="z-index:2; margin-right:3%;" href="https://www.linkedin.com/in/bryan-zhou-9b17832b2/" target="_blank" rel="noopener noreferrer">
-                    <img src="bryanzhou-website/in.png" alt="LinkedIn Profile" width="30" height="30">
+                    <img src="images/in.png" alt="LinkedIn Profile" width="30" height="30">
                 </a>
             </div>
 
@@ -38,8 +38,8 @@
             volleyball, hike+backpack, and watch movies.
         </p>
         </div>
-        <img src="bryanzhou-website/business-casual-headshot.jpg" class="headshot" style="z-index:2; transform: translateY(-25%)">
-        <img src="bryanzhou-website/headshot2.JPG" class="headshot" style="z-index: 1; transform: translate(-30%,10%)">
+        <img src="images/business-casual-headshot.jpg" class="headshot" style="z-index:2; transform: translateY(-25%)">
+        <img src="images/headshot2.JPG" class="headshot" style="z-index: 1; transform: translate(-30%,10%)">
     </div>
         <!--my philosophy-->
         <div class="philosophy-box">
@@ -69,9 +69,41 @@
             </p>
             </div>
             </div>
-        <div>
-            <img src="nothing" class="laser-project-photo">
-        </div>
+    <!--horizontal image carousel-->
+    <input type="radio" name="slide" id="s1" checked>
+    <input type="radio" name="slide" id="s2">
+    <input type="radio" name="slide" id="s3">
+    <input type="radio" name="slide" id="s4">
+
+  <div class="carousel">
+    <div class="viewport">
+      <div class="track">
+        <img src="images/laser project photo 1.jpg" alt="Image 1">
+        <img src="images/laser project photo 2.jpg" alt="Image 2">
+        <img src="images/laser tracker cad.png" alt="Image 3">
+        <img src="images/laser project photo 3.JPG" alt="Image 4">
+      </div>
+    </div>
+
+    <div class="set set1">
+      <label for="s4" aria-label="Up">&#9650;</label>
+      <label for="s2" aria-label="Down">&#9660;</label>
+    </div>
+    <div class="set set2">
+      <label for="s1" aria-label="Up">&#9650;</label>
+      <label for="s3" aria-label="Down">&#9660;</label>
+    </div>
+    <div class="set set3">
+      <label for="s2" aria-label="Up">&#9650;</label>
+      <label for="s4" aria-label="Down">&#9660;</label>
+    </div>
+    <div class="set set4">
+        <label for="s3" aria-label="Up">&#9650;</label>
+        <label for="s1" aria-label="Down">&#9660;</label>
+      </div>
+  </div>
+
+  <!--autoplaying video-->
         <div style="align-self:center">
         <video loop autoplay muted height="300px" style="border-radius:5px; margin:15px">
             <source src="laser-demo.mp4">
