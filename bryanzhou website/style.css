@@ -1,0 +1,142 @@
+/*custom font library*/
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:14%;
+}
+.architects-daughter-regular {
+    font-family: "Architects Daughter", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+  }  
+.momo-trust-display-regular {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }
+  
+.nunito{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ae7b5a
+  }
+/*background colors*/
+body{
+    background-color: #f6dfc5;
+    height: 100%;
+    min-height:300vh; 
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items:stretch;
+    gap:60px;
+    padding-top:15%;
+}
+.header-container{
+    top:10px;
+    z-index: 5;
+    display:flex;
+    position: fixed;
+    align-items: center;
+    width:99%;
+    background-color: #ff8c00;
+    height:11%;
+    clip-path: polygon(
+    10px 0%,           /* Top-left start */
+    calc(100% - 10px) 0%, /* Top-right start */
+    100% 10px,         /* Top-right end */
+    100% calc(100% - 10px), /* Bottom-right start */
+    calc(100% - 10px) 100%, /* Bottom-right end */
+    10px 100%,         /* Bottom-left start */
+    0% calc(100% - 10px), /* Bottom-left end */
+    0% 10px            /* Top-left end */
+    )
+}
+.hyperlinks{
+    margin:5vw;
+    text-decoration:none;
+    font-size:20px;
+    color:black;
+}
+.blur-box{
+    z-index:4;
+    left:-10px; 
+    right:0%;
+    top:-10px; 
+    height:15%;
+    margin:0; 
+    padding:0; 
+    background-color: grey;
+    position:fixed;
+    filter:blur(20px);
+}
+.about-box{
+    border-radius:20px;
+    align-self:flex-start;
+    margin-top:-20px;
+    margin-left:7%;
+    width:40%;
+    min-height:40%; 
+    background-color: #E5F3FD;
+}
+.headshot{
+    display:flex;
+    width:20vw;
+    border-radius: 20px;
+}
+.about-title{
+    position:static;
+    font-size: clamp(24px,6vw,75px)
+}
+.philosophy-box{
+    border-radius:20px;
+    align-self:flex-end;
+    margin-right:6%;
+    width:40%;
+    min-height:40%; 
+    background-color: #D0F0c0;
+    transform: translateY(5%)
+}
+.philosophy-title{
+    text-align:end;
+    position:static;
+    font-size: clamp(24px,5vw,75px)
+}
+h1{
+    text-align: center;
+    font-size: clamp(24px,6vw,46px);
+    left:50%;
+    top: 50%;
+    transform: translate(-25%);
+}
+.about-text{
+    text-indent:20px;
+    margin:5%;
+    position:static;
+}
+.hardware{
+    border-radius:20px;
+    display:flex;
+    align-self:center;
+    width:85%;
+    min-height:40%; 
+    background-color: #D1CBC1;
+}
+.hardware-title{
+    text-align:start;
+    position:static;
+    font-size: clamp(24px,5vw,75px);
+}
+.hardware-descriptor{
+    width:auto;
+}
+.hardware-descriptor{
+    flex-direction: column;
+}
+.laser-project-photo{
+    width:20vw;
+    border-radius: 5px;
+}
