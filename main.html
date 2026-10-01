@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> i don't bite &lt;3 </title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Momo+Trust+Display&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <!--header-->
+        <div class="blur-box" aria-hidden="true">
+        </div>
+            <div class="header-container">
+                <a class="hyperlinks nunito" href="#hardware-work">&nbsp;&nbsp; hardware projects
+            </a>
+                <h1 style= "margin: auto;" >
+                    <a href="#top" class= "momo-trust-display-regular" style="text-decoration:none">bryan zhou's website</a>
+                </h1>
+                <a style="z-index:2; margin-right:3%;" href="https://www.linkedin.com/in/bryan-zhou-9b17832b2/" target="_blank" rel="noopener noreferrer">
+                    <img src="bryanzhou-website/in.png" alt="LinkedIn Profile" width="30" height="30">
+                </a>
+            </div>
+
+        <!--about section--> 
+        <div style="display:flex; align-items:center; gap:15vh;">
+        <div class="about-box">
+        <h2 class="nunito about-title">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;about
+        </h2>
+        <p class = "about-text nunito">
+            hi, i'm bryan zhou, a first year physics major at UCLA. 
+            i'm interested in aspects of design & hardware/software engineering.
+            i have experience in CAD softwares [onshape & fusion360], 
+            PCB design [altium], and python. in my freetime, i love to play
+            volleyball, hike+backpack, and watch movies.
+        </p>
+        </div>
+        <img src="bryanzhou-website/business-casual-headshot.jpg" class="headshot" style="z-index:2; transform: translateY(-25%)">
+        <img src="bryanzhou-website/headshot2.JPG" class="headshot" style="z-index: 1; transform: translate(-30%,10%)">
+    </div>
+        <!--my philosophy-->
+        <div class="philosophy-box">
+            <h2 class="nunito philosophy-title">
+                my philosophy&nbsp;&nbsp;
+            </h2>
+            <p class = "about-text nunito">
+                with the rise of ai especially in design and programming,
+                it's incredibly easy to create visually appealling websites and art.
+                it's my belief, however, that true art and design is beautiful because of the
+                story behind it - we are human from feelings we can invoke in each other. on the left is a 
+                video of the creation of this website (and me learning html/css) with ai usage 
+                only for debugging/learning. All code on this website was handwritten.
+            </p>
+            </div>
+        <!--hardware work-->
+        <div class="hardware" id="hardware-work">
+            <div class="text-column">
+            <h2 class="nunito hardware-title">
+                &nbsp;&nbsp;hardware projects
+            </h2>
+            <div class="hardware-descriptor">            
+                <p class = "about-text nunito">
+                1. laser tracker <br>
+                Using an esp-23 CAM and two servos, I designed a remotely controllable laser and camera set-up.
+                components were designed using Onshape and 3-d printed using X1C and P1P Bambu lab 3-d printers.
+            </p>
+            </div>
+            </div>
+        <div>
+            <img src="nothing" class="laser-project-photo">
+        </div>
+        <div style="align-self:center">
+        <video loop autoplay muted height="300px" style="border-radius:5px; margin:15px">
+            <source src="laser-demo.mp4">
+        </video>
+    </div>
+            </div>
+    </body>
+</html>
